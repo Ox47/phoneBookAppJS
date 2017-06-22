@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <title></title>
+</head>
+<body>
+<div class="main clearfix">
+    <aside class="actionButtons clearfix">
+        <ul>
+            <li>
+                <button id="addMemberBtn" class="addMemeber btn">Add</button>
+            </li>
+            <li>
+                <button class="removeMemeber btn">Remove</button>
+            </li>
+            <li>
+                <span>Search Member:</span>
+                <input class="searchMember">
+            </li>
+        </ul>
+    </aside>
+
+    <div class="memberFormAndInfo">
+        <section id="addMemeberForm">
+            <form>
+                <div class="firstNameInputContainer">
+                    <span>First name:</span>
+                    <input type="text" name="firstname" placeholder="First name" id="firstName">
+                </div>
+                <div class="lastNameInputContainer">
+                    <span>Last name:</span>
+                    <input type="text" name="lastname" placeholder="Last name" id="lastName">
+                </div>
+                <div class="phoneNumberInputContainer">
+                    <span>Phone Number:</span>
+                    <input type="text" name="phonenumber" placeholder="Phone Number" id="phoneNumber">
+                </div>
+                <div class="submitContainer">
+                    <input type="submit" value="Submit" class="submitButton">
+                </div>
+            </form>
+        </section>
+        <section class="membersData">
+            <table>
+                <tr>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>Phone Number</th>
+                </tr>
+            </table>
+
+        </section>
+    </div>
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
